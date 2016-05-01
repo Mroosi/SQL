@@ -1,0 +1,37 @@
+
+CREATE TABLE deaamooL(
+Id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+Nimi VARCHAR(200),
+Vanus INT,
+Liik VARCHAR(200),
+Puur INT
+) 
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom1','10','Tiiger','25') 
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom2','1','Hiir','10')
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom3','3','Kits','25')
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom4','3','Kass','10')
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom5','50','Elevant','12')
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom6','5','Ahv','8')
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom7','2','Ahv','8')
+
+INSERT INTO deaamooL (Nimi, Vanus, Liik, Puur)
+VALUES ('Loom8','4','Ahv','8')
+
+SELECT Nimi,Puur FROM deaamooL WHERE Puur='8'
+SELECT MIN(Vanus), MAX(Vanus) FROM deaamooL
+SELECT COUNT(Puur), Puur FROM deaamooL GROUP BY Puur
+UPDATE deaamooL SET Vanus=Vanus+1
